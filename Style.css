@@ -1,8 +1,4 @@
-/* ════════════════════════════════════════
-   VARUN PORTFOLIO — style.css
-   ════════════════════════════════════════ */
 
-/* ── Variables ── */
 :root {
   --bg:       #050a0f;
   --bg2:      #080f17;
@@ -18,7 +14,7 @@
   --body:     'DM Sans', sans-serif;
 }
 
-/* ── Reset ── */
+
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -26,7 +22,7 @@ body {
   color: var(--text);
   font-family: var(--body);
   overflow-x: hidden;
-  /* Techy terminal-style cursor using SVG data URI */
+
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='3' fill='%2300e5ff'/%3E%3Cline x1='12' y1='2' x2='12' y2='8' stroke='%2300e5ff' stroke-width='1.5'/%3E%3Cline x1='12' y1='16' x2='12' y2='22' stroke='%2300e5ff' stroke-width='1.5'/%3E%3Cline x1='2' y1='12' x2='8' y2='12' stroke='%2300e5ff' stroke-width='1.5'/%3E%3Cline x1='16' y1='12' x2='22' y2='12' stroke='%2300e5ff' stroke-width='1.5'/%3E%3C/svg%3E") 12 12, crosshair;
 }
 
@@ -34,15 +30,15 @@ a, button, .skill-chip, .project-card, .cert-card, .nav-toggle, .timeline-card {
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='5' fill='none' stroke='%237b2ff7' stroke-width='1.5'/%3E%3Ccircle cx='12' cy='12' r='2' fill='%237b2ff7'/%3E%3Cline x1='12' y1='2' x2='12' y2='7' stroke='%237b2ff7' stroke-width='1.5'/%3E%3Cline x1='12' y1='17' x2='12' y2='22' stroke='%237b2ff7' stroke-width='1.5'/%3E%3Cline x1='2' y1='12' x2='7' y2='12' stroke='%237b2ff7' stroke-width='1.5'/%3E%3Cline x1='17' y1='12' x2='22' y2='12' stroke='%237b2ff7' stroke-width='1.5'/%3E%3C/svg%3E") 12 12, pointer;
 }
 
-/* cursor divs kept in HTML but hidden — no JS cursor needed */
+
 #cursor-dot, #cursor-ring { display: none; }
 
-/* ── Scrollbar ── */
+
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--accent2); border-radius: 2px; }
 
-/* ── Noise Overlay ── */
+
 body::before {
   content: '';
   position: fixed; inset: 0;
@@ -52,9 +48,8 @@ body::before {
   opacity: 0.35;
 }
 
-/* ════════════════════════════════════════
-   NAVIGATION
-   ════════════════════════════════════════ */
+
+
 nav {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 1000;
@@ -110,9 +105,8 @@ nav.scrolled { padding: 12px 60px; }
   display: block;
 }
 
-/* ════════════════════════════════════════
-   HERO
-   ════════════════════════════════════════ */
+
+
 #hero {
   min-height: 100vh;
   display: flex; align-items: center;
@@ -275,9 +269,7 @@ nav.scrolled { padding: 12px 60px; }
   animation: scrollDrop 1.8s infinite;
 }
 
-/* ════════════════════════════════════════
-   SECTION SHARED
-   ════════════════════════════════════════ */
+
 section { position: relative; z-index: 1; }
 
 .section-wrap {
@@ -304,9 +296,7 @@ section { position: relative; z-index: 1; }
   background: var(--border); max-width: 120px;
 }
 
-/* ════════════════════════════════════════
-   ABOUT & SKILLS
-   ════════════════════════════════════════ */
+
 #about { background: var(--bg2); }
 
 .about-grid {
@@ -321,7 +311,6 @@ section { position: relative; z-index: 1; }
 }
 .about-text p strong { color: var(--text); }
 
-/* ── Skills Grid ── */
 .skills-section { display: flex; flex-direction: column; gap: 10px; }
 
 .skills-label {
@@ -361,9 +350,8 @@ section { position: relative; z-index: 1; }
 .dot.purple { background: var(--accent2); box-shadow: 0 0 6px var(--accent2); }
 .dot.green  { background: var(--accent3); box-shadow: 0 0 6px var(--accent3); }
 
-/* ════════════════════════════════════════
-   EDUCATION
-   ════════════════════════════════════════ */
+
+
 #education { background: var(--bg); }
 
 .edu-card {
@@ -401,9 +389,7 @@ section { position: relative; z-index: 1; }
   border: 1px solid rgba(0,229,255,0.2);
 }
 
-/* ════════════════════════════════════════
-   INTERNSHIP / TIMELINE
-   ════════════════════════════════════════ */
+
 #internship { background: var(--bg2); }
 
 .timeline { position: relative; padding-left: 40px; }
@@ -458,9 +444,8 @@ section { position: relative; z-index: 1; }
   color: var(--accent3); font-size: 1.1rem; line-height: 1.5;
 }
 
-/* ════════════════════════════════════════
-   PROJECTS
-   ════════════════════════════════════════ */
+
+
 #projects { background: var(--bg); }
 
 .projects-grid {
@@ -506,9 +491,7 @@ section { position: relative; z-index: 1; }
   border: 1px solid rgba(0,255,157,0.15);
 }
 
-/* ════════════════════════════════════════
-   CERTIFICATES
-   ════════════════════════════════════════ */
+
 #certificates { background: var(--bg2); }
 
 .certs-grid {
@@ -545,9 +528,7 @@ section { position: relative; z-index: 1; }
   font-size: 0.82rem; color: var(--muted); line-height: 1.7;
 }
 
-/* ════════════════════════════════════════
-   CONTACT
-   ════════════════════════════════════════ */
+
 #contact { background: var(--bg); }
 
 .contact-inner {
@@ -615,9 +596,7 @@ section { position: relative; z-index: 1; }
   color: var(--accent3); display: none;
 }
 
-/* ════════════════════════════════════════
-   FOOTER
-   ════════════════════════════════════════ */
+
 footer {
   background: var(--bg2);
   border-top: 1px solid var(--border);
@@ -629,18 +608,14 @@ footer {
 }
 footer span { color: var(--accent); }
 
-/* ════════════════════════════════════════
-   REVEAL UTILITY
-   ════════════════════════════════════════ */
+
 .reveal {
   opacity: 0; transform: translateY(24px);
   transition: opacity 0.7s, transform 0.7s;
 }
 .reveal.visible { opacity: 1; transform: none; }
 
-/* ════════════════════════════════════════
-   KEYFRAMES
-   ════════════════════════════════════════ */
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: none; }
@@ -657,11 +632,8 @@ footer span { color: var(--accent); }
   0%   { top: -100%; }
   100% { top: 200%; }
 }
-/* marquee animations removed */
 
-/* ════════════════════════════════════════
-   RESPONSIVE
-   ════════════════════════════════════════ */
+
 @media (max-width: 900px) {
   nav { padding: 16px 24px; }
   nav.scrolled { padding: 12px 24px; }
